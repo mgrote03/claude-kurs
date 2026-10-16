@@ -14,5 +14,11 @@ Full rationale: [`docs/code-principles.md`](docs/code-principles.md).
 - No premature abstraction — wait for the third use.
 - Small functions named for intent; "and" in the name means split it.
 
+## Git
+- Never commit to or push `main`. Work on a branch named `<type>/<slug>` (e.g. `feat/strompris-dashboard`).
+- Conventional commits: `feat:`, `fix:`, `test:`, `docs:`, `refactor:`, `chore:`. Subject under 72 chars; include REQ IDs when relevant.
+- Commit in logical chunks, each leaving the tests green — not one big commit at the end.
+- Don't push or open PRs; the user does that. Pushing crosses into shared infrastructure.
+
 ## Subdirs
 - `backend/AGENTS.md` — test isolation.
